@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f2ea">
+  <meta name="description" content="EMBER & SPICE-এর সম্পূর্ণ বাংলা ডিজিটাল মেনু — তন্দুর, বিরিয়ানি, মেইন কোর্স, চাইনিজ, পানীয় ও ডেজার্ট।">
+  <meta property="og:title" content="EMBER & SPICE — বাংলা ডিজিটাল মেনু">
+  <meta property="og:description" content="তাজা রান্না, তন্দুরের ধোঁয়া আর বাঙালির পছন্দের স্বাদ — এক জায়গায় সম্পূর্ণ মেনু।">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=85">
+  <title>EMBER & SPICE — বাংলা ডিজিটাল মেনু</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "EMBER & SPICE",
+    "description": "Modern Indian dining where fire meets flavor.",
+    "servesCuisine": ["Indian", "Chinese", "Continental"],
+    "telephone": "+91-98765-43210",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18 Riverside Avenue",
+      "addressLocality": "Kolkata",
+      "addressRegion": "West Bengal",
+      "postalCode": "700001",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 11:30-23:00"
+  }
+  </script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="site-shell hero-content">
+      <div class="hero-topbar">
+        <a class="brand-mark" href="#home" aria-label="EMBER & SPICE-এর হোম">
+          <span class="brand-symbol"><i class="bi bi-fire"></i></span>
+          <span>
+            <strong>EMBER <em>&</em> SPICE</strong>
+            <small>আধুনিক ভারতীয় রান্নাঘর</small>
+          </span>
+        </a>
+        <div class="hero-actions">
+          <button class="icon-button light-button" id="themeToggle" type="button" aria-label="ডার্ক মোড চালু করুন">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <a class="outline-pill" href="tel:+919876543210"><i class="bi bi-telephone"></i><span>কল করুন</span></a>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow light-eyebrow"><span></span> ২০১৮ থেকে · কলকাতা</p>
+        <h1>আগুনের <span>ছোঁয়ায়</span><br>স্বাদের গল্প।</h1>
+        <p class="hero-description">তন্দুরের ধোঁয়া, মশলার সুবাস আর পরিচিত স্বাদের নতুন রূপ — যত্ন করে রান্না, ভালোবাসা দিয়ে পরিবেশন।</p>
+        <div class="hero-meta">
+          <span><i class="bi bi-geo-alt"></i> রিভারসাইড অ্যাভিনিউ</span>
+          <span><i class="bi bi-clock"></i> আজ খোলা · সকাল ১১:৩০ – রাত ১১টা</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#menu" class="primary-pill"><span>মেনু দেখুন</span><i class="bi bi-arrow-down"></i></a>
+          <a href="#contact" class="text-link light-text-link"><i class="bi bi-send"></i> Get directions</a>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <div class="mini-rating">
+          <span class="rating-stars">★★★★★</span>
+          <span><strong>4.8</strong> · আমাদের নিয়মিত অতিথিদের পছন্দ</span>
+        </div>
+        <div class="scroll-cue"><span>মেনু দেখতে স্ক্রল করুন</span><i class="bi bi-arrow-down-short"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured-section site-section" aria-labelledby="featured-title">
+      <div class="site-shell">
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow"><span></span> রান্নাঘর থেকে</p>
+            <h2 id="featured-title">শেফের পছন্দ</h2>
+          </div>
+          <p class="section-note">টেবিলে একটু জায়গা রাখুন — এগুলো আমাদের বিশেষ পদ।</p>
+        </div>
+        <div id="featuredCarousel" class="owl-carousel owl-theme" aria-label="শেফের পছন্দের পদ"></div>
+      </div>
+    </section>
+
+    <section class="offer-strip" aria-label="উইকএন্ড স্পেশাল">
+      <div class="site-shell offer-inner">
+        <div class="offer-icon"><i class="bi bi-stars"></i></div>
+        <div class="offer-copy">
+          <span>উইকএন্ড স্পেশাল</span>
+          <strong>Butter Chicken + Garlic Naan</strong>
+          <small>একসঙ্গে খাওয়ার জন্য তৈরি, মন ভালো করা স্বাদ।</small>
+        </div>
+        <div class="offer-price">₹499</div>
+        <a class="offer-link" href="#main-menu">মেনুতে দেখুন <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="menu-toolbar" id="menu">
+      <div class="site-shell">
+        <div class="toolbar-top">
+          <div>
+            <p class="eyebrow"><span></span> আমাদের মেনু</p>
+            <h2>পছন্দের স্বাদ বেছে নিন।</h2>
+          </div>
+          <div class="toolbar-tools">
+            <button class="utility-button" id="openSearch" type="button"><i class="bi bi-search"></i><span>পদ খুঁজুন</span></button>
+            <button class="utility-button theme-desktop-toggle" id="themeToggleDesktop" type="button"><i class="bi bi-circle-half"></i><span>থিম</span></button>
+          </div>
+        </div>
+
+        <div class="search-panel" id="searchPanel" hidden>
+          <div class="search-input-wrap">
+            <i class="bi bi-search"></i>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="পদ খুঁজুন, ingredients or categories…" aria-label="মেনু খুঁজুন">
+            <button id="clearSearch" class="search-clear" type="button" aria-label="সার্চ মুছুন"><i class="bi bi-x-lg"></i></button>
+          </div>
+          <p class="search-hint" id="searchHint">“Chicken”, “Paneer”, “ঝাল” বা “Dessert” লিখে খুঁজুন।</p>
+        </div>
+
+        <div class="category-nav" id="categoryNav" role="navigation" aria-label="মেনুর বিভাগ">
+          <button class="category-chip active" data-category="all" type="button">সব</button>
+          <button class="category-chip" data-category="Starters" type="button">স্টার্টার</button>
+          <button class="category-chip" data-category="Soups" type="button">স্যুপ</button>
+          <button class="category-chip" data-category="Tandoor" type="button">তন্দুর</button>
+          <button class="category-chip" data-category="Main Course" type="button">মেইন কোর্স</button>
+          <button class="category-chip" data-category="Biryani" type="button">বিরিয়ানি</button>
+          <button class="category-chip" data-category="Breads" type="button">রুটি ও নান</button>
+          <button class="category-chip" data-category="Chinese" type="button">চাইনিজ</button>
+          <button class="category-chip" data-category="Beverages" type="button">পানীয়</button>
+          <button class="category-chip" data-category="Desserts" type="button">ডেজার্ট</button>
+        </div>
+
+        <div class="filters-row" aria-label="খাবারের ধরন অনুযায়ী ফিল্টার">
+          <div class="filter-label"><i class="bi bi-sliders2"></i> ফিল্টার</div>
+          <button class="filter-chip active" data-filter="all" type="button">সব পদ</button>
+          <button class="filter-chip" data-filter="vegetarian" type="button"><span class="diet-dot veg"></span> Vegetarian</button>
+          <button class="filter-chip" data-filter="non-vegetarian" type="button"><span class="diet-dot nonveg"></span> Non-veg</button>
+          <button class="filter-chip" data-filter="spicy" type="button"><i class="bi bi-fire"></i> Spicy</button>
+          <button class="filter-chip" data-filter="vegan" type="button">ভেগান</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-content site-section" id="main-menu" aria-labelledby="menu-heading">
+      <div class="site-shell">
+        <div class="menu-intro">
+          <div>
+            <p class="eyebrow"><span></span> ফ্রেশ রান্না</p>
+            <h2 id="menu-heading">স্বাদে ভরপুর, ঝামেলা ছাড়া।</h2>
+          </div>
+          <p>প্রথম কামড় থেকে শেষ চামচ পর্যন্ত — প্রতিটি পদ পরিচিত, উদার আর মনে রাখার মতো করে তৈরি।</p>
+        </div>
+        <div id="menuContainer"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-icon"><i class="bi bi-search"></i></div>
+          <h3>কোনও পদ পাওয়া যায়নি</h3>
+          <p>অন্য কিছু লিখে খুঁজুন অথবা ফিল্টার রিসেট করুন।</p>
+          <button id="resetFilters" class="primary-pill dark-pill" type="button">ফিল্টার রিসেট করুন</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section site-section" id="contact">
+      <div class="site-shell info-grid">
+        <div class="info-card info-card-main">
+          <p class="eyebrow"><span></span> এসে বসুন</p>
+          <h2>আপনার জন্য একটি টেবিল অপেক্ষায়।</h2>
+          <p class="info-lead">দুপুরের আরামদায়ক খাবার, সন্ধ্যার ধীর আড্ডা — এমন এক মিল, যার পরেরবার আসার কথা মাথায় এসেই যায়।</p>
+          <div class="info-actions">
+            <a class="primary-pill dark-pill" href="https://maps.google.com/?q=18+Riverside+Avenue+Kolkata" target="_blank" rel="noopener"><i class="bi bi-map"></i><span>লোকেশন দেখুন</span></a>
+            <a class="secondary-pill" href="https://wa.me/919876543210?text=Hello%20EMBER%20%26%20SPICE" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>হোয়াটসঅ্যাপ</span></a>
+          </div>
+        </div>
+
+        <div class="info-detail-card">
+          <div class="detail-block">
+            <span class="detail-label"><i class="bi bi-geo-alt"></i> Address</span>
+            <p>18 রিভারসাইড অ্যাভিনিউ<br>Park Street, Kolkata 700001</p>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label"><i class="bi bi-clock"></i> Opening hours</span>
+            <p>সোমবার–রবিবার<br><strong>11:30 AM–11:00 PM</strong></p>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label"><i class="bi bi-telephone"></i> Contact</span>
+            <p><a href="tel:+919876543210">+91 98765 43210</a><br><a href="mailto:hello@emberspice.example">hello@emberspice.example</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-shell">
+      <div class="footer-promo">
+        <div class="footer-promo-copy">
+          <span class="footer-promo-kicker"><i class="bi bi-stars"></i> আজকের আমন্ত্রণ</span>
+          <h2>এক প্লেট দিয়ে শুরু হোক<br><em>আপনার আজকের গল্প।</em></h2>
+          <p>পরিবারের সঙ্গে দুপুরের খাওয়া, বন্ধুদের আড্ডা কিংবা প্রিয় মানুষকে নিয়ে একটি শান্ত ডিনার — স্বাদের জন্য আমরা এখানেই আছি।</p>
+          <div class="footer-promo-tags">
+            <span>ফ্যামিলি ডাইনিং</span>
+            <span>উইকএন্ড আড্ডা</span>
+            <span>লাঞ্চ & ডিনার</span>
+          </div>
+        </div>
+        <div class="footer-promo-actions">
+          <a class="footer-promo-button primary" href="tel:+919876543210"><i class="bi bi-telephone"></i><span>এখনই কল করুন</span></a>
+          <a class="footer-promo-button secondary" href="https://wa.me/919876543210?text=Hello%20EMBER%20%26%20SPICE" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>হোয়াটসঅ্যাপে জিজ্ঞাসা করুন</span></a>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <a class="footer-brand" href="#home">
+          <span class="brand-symbol"><i class="bi bi-fire"></i></span>
+          <span><strong>EMBER & SPICE</strong><small>আগুনের ছোঁয়ায় স্বাদের গল্প।</small></span>
+        </a>
+
+        <div class="footer-hours">
+          <span><i class="bi bi-clock"></i> প্রতিদিন খোলা</span>
+          <strong>সকাল ১১:৩০ – রাত ১১টা</strong>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/919876543210" aria-label="হোয়াটসঅ্যাপ"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <p>© <span id="currentYear"></span> EMBER & SPICE · ভালো খাবারের জন্য ভালোবাসা দিয়ে তৈরি।</p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="দ্রুত নেভিগেশন">
+    <a href="#home"><i class="bi bi-house"></i><span>হোম</span></a>
+    <a href="#menu"><i class="bi bi-grid"></i><span>মেনু</span></a>
+    <button id="mobileSearch" type="button"><i class="bi bi-search"></i><span>খুঁজুন</span></button>
+    <a href="#contact"><i class="bi bi-telephone"></i><span>যোগাযোগ</span></a>
+  </nav>
+
+  <div class="modal-backdrop" id="itemModal" hidden>
+    <div class="item-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+      <button class="modal-close" id="modalClose" type="button" aria-label="পদের বিস্তারিত বন্ধ করুন"><i class="bi bi-x-lg"></i></button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="">
+        <div class="modal-image-overlay"></div>
+        <div class="modal-badges" id="modalBadges"></div>
+      </div>
+      <div class="modal-body">
+        <p class="modal-category" id="modalCategory"></p>
+        <div class="modal-title-row">
+          <h2 id="modalTitle"></h2>
+          <strong id="modalPrice"></strong>
+        </div>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="modal-detail-grid">
+          <div><span>উপকরণ</span><strong id="modalউপকরণ"></strong></div>
+          <div><span>ঝালের মাত্রা</span><strong id="modalSpice"></strong></div>
+          <div><span>খাবারের ধরন</span><strong id="modalখাবারের ধরন"></strong></div>
+          <div><span>পরিমাণ</span><strong id="modalপরিমাণ"></strong></div>
+        </div>
+        <button class="primary-pill dark-pill modal-action" id="modalCall" type="button"><i class="bi bi-telephone"></i><span>এই পদ সম্পর্কে জানতে কল করুন</span></button>
+      </div>
+    </div>
+  </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="EMBER & SPICE-এ হোয়াটসঅ্যাপে যোগাযোগ করুন">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
